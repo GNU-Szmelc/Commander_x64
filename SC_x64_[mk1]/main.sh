@@ -1,13 +1,18 @@
 #!/bin/bash
-# MAIN SZMELC-COMMANDER ENTRY POINT
+# MAIN SZMELC-COMMANDER ENTRY POINT w ASCII
+
 clear && echo ""
+cat cat/ASCII.md 
+echo "" 
 echo "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 echo "░░  SZMELC-COMMANDER-MAIN = ░░"
 echo "░░   == MK-VI ==  [rgf4y1]  ░░"
 echo "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 echo ""
-cat 101.md | more
+cat cat/101.md
 echo ""
+cat cat/ASCIIS.md
+echo "" && echo ""
 # Store the initial main directory
 INITIAL_MAIN_DIR=$(pwd)
 
