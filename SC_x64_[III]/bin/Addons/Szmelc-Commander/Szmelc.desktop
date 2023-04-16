@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Szmelc Commander
+Comment=Now with Launcher!
+Exec=x-terminal-emulator -fa "Monospace" -fs 10 -geometry 50x25 -e "bash exec.sh"
+Icon=allegorithmic-Substance_Painter
+Path=/media/SilverX/BOX/SzmelcCommander/Szmelc/
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,6 @@
+# Example config.yml file [example variables]
+main:
+  var1: localhost
+  var2: eeeee
+  var3: user
+  var4: eee

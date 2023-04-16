@@ -1,0 +1,20 @@
+{
+  "modules": [
+    {
+      "name": "c1",
+      "file": "c1.sh"
+    },
+    {
+      "name": "c2",
+      "file": "c2.sh"
+    },
+    {
+      "name": "c3",
+      "file": "c3.sh"
+    },
+		{
+      "name": "c4",
+      "file": "c4.sh"
+    }
+  ]
+}

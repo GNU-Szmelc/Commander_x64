@@ -1,0 +1,224 @@
+# SZMELC.INC LIMITED
+# Szmelc Sorter configuration file
+# CONFIG.YML MK III - Now with excluded & multiple source dirs support!
+# CAUTION!
+# "~/x/" source path & excluding its subdirectory "~/x/y/" will error out
+
+# Directories to exclude from script process
+excluded_directories:
+  - /media/SilverX/BOX/eee/e/
+# Directories to run script in
+source_directories:
+  - /media/SilverX/BOX/eee/b/
+  - /media/SilverX/BOX/eer/
+
+# Dictionary of supported file formats & target paths
+# Target path is relative to script path by default
+formats:
+  # IMAGES
+  - .png
+  - .jpeg
+  - .jpg
+  - .webp
+  - .svg
+  - .ico
+  - .gif
+  - .avif
+  # MISC
+  - .ttf
+  - .dist
+  - .LICENSE
+  # MINECRAFT
+  - .mcmeta
+  - .mcfunction
+  - .mca
+  - .mcgame
+  - .mcpack
+  - .nbt
+  - .snbt
+  # DOCUMENTS
+  - .txt
+  - .pdf
+  - .md
+  - .log
+  - .man
+  - .info
+  - .save
+  - .MF
+  # CONFIGS
+  - .yml
+  - .json
+  - .config
+  - .properties
+  - .conf
+  - .dat
+  # ARCHIVES
+  - .zip
+  - .rar
+  - .gz
+  - .xz
+  - .jar
+  - .pak
+  # VIDEO
+  - .mp4
+  - .webm
+  - .mkv
+  # WEBSITE CODE
+  - .js
+  - .html
+  - .css
+  - .php
+  - .xml
+  - .sql
+  # LINUZE
+  - .AppImage
+  - .deb
+  - .desktop
+  - .apk
+  - .so
+  # SCRIPTS
+  - .sh
+  - .py
+  - .ps1
+  - .psm1
+  - .psd1
+  - .lua
+  - .c
+  - .java
+  - .class
+  # WINDOZE
+  - .exe
+  - .dll
+  - .bat
+  - .msi
+  - .bin
+  - .ini
+  - .iso
+  # AUDIO
+  - .mp3
+  - .wav
+  - .ogg
+  # Game ROMS for Emulators
+  - .nds
+  - .gba
+  - .nes
+  - .sfc
+  - .z64
+  - .gb
+  - .gbc
+  - .vb
+  # SZMELC.INC formats
+  - .szmelc
+  - .kekw
+  - .silver
+  # GIT [does not work atm]
+  - .gitkeep
+  - .gitignore
+  - .git
+# Assigned file format to target path
+#################################
+# IMAGES
+.png: Sorted/images
+.jpeg: Sorted/images
+.jpg: Sorted/images
+.webp: Sorted/images
+.svg: Sorted/images/SVG
+.ico: Sorted/images/icons
+.gif: Sorted/images/gif
+.avif: Sorted/images/avif
+# MISC
+.ttf: Sorted/Misc/Fonts
+.dist: Sorted/Misc/Dist
+.LICENSE: Sorted/Misc/LICENSE
+# MINECRAFT
+.mcmeta: Sorted/MC
+.mcfunction: Sorted/MC
+.mca: Sorted/MC
+.mcgame: Sorted/MC
+.mcpack: Sorted/MC
+.nbt: Sorted/MC/NBT
+.snbt: Sorted/MC/NBT
+# DOCUMENTS
+.txt: Sorted/documents
+.pdf: Sorted/documents
+.md: Sorted/documents/Readme
+.log: Sorted/documents/Logs
+.man: Sorted/documents/MANUAL
+.info: Sorted/documents/info
+.save: Sorted/documents/save
+.MF: Sorted/documents/MANIFEST
+# CONFIGS
+.yml: Sorted/Scripts/Configs/Yaml
+.json: Sorted/Scripts/Configs/Json
+.config: Sorted/Scripts/Configs
+.properties: Sorted/Scripts/Configs
+.conf: Sorted/Scripts/Configs/MC
+.dat: Sorted/Scripts/Configs/Dat
+# VIDEO
+.mp4: Sorted/video
+.webm: Sorted/video
+.mkv: Sorted/video
+# WEBSITE CODE
+.js: Sorted/webdev/js
+.html: Sorted/webdev/html
+.css: Sorted/webdev/css
+.php: Sorted/webdev/php
+.xml: Sorted/webdev/xml
+.sql: Sorted/webdev/sql
+# LINUZE
+.AppImage: Sorted/LINUZE/installers
+.apk: Sorted/LINUZE/APK
+.deb: Sorted/LINUZE/installers
+.desktop: Sorted/LINUZE/launchers
+.so: Sorted/LINUZE/Shared
+# SCRIPTS
+.sh: Sorted/Scripts/Shell
+.py: Sorted/Scripts/Python
+.ps1: Sorted/Scripts/Powershell
+.psm1: Sorted/Scripts/Powershell/Stuff
+.psd1: Sorted/Scripts/Powershell/Stuff
+.lua: Sorted/Scripts/Lua
+.c: Sorted/Scripts/C
+.java: Sorted/Scripts/Java
+.class: Sorted/Scripts/Java/Class
+# ARCHIVES
+.zip: Sorted/archives
+.rar: Sorted/archives
+.gz: Sorted/archives
+.xz: Sorted/archives
+.jar: Sorted/archives/jar
+.pak: Sorted/archives
+# WINDOZE
+.exe: Sorted/Windoze/exe
+.msi: Sorted/Windoze/msi
+.dll: Sorted/Windoze/dll
+.bat: Sorted/Windoze/batch
+.bin: Sorted/OS/Binaries
+.ini: Sorted/OS/Init
+.iso: Sorted/OS/Images
+# AUDIO
+.mp3: Sorted/Audio/mp3
+.wav: Sorted/Audio/wav
+.ogg: Sorted/Audio/ogg
+# EMULATOR GAME ROMS
+.nds: Sorted/ROMS
+.gba: Sorted/ROMS
+.nes: Sorted/ROMS
+.sfc: Sorted/ROMS
+.z64: Sorted/ROMS
+.gb: Sorted/ROMS
+.gbc: Sorted/ROMS
+.vb: Sorted/ROMS
+# SZMELC.INC
+.szmelc: Sorted/SZMELC
+.kekw: Sorted/SZMELC
+.silver: Sorted/SZMELC
+# GIT
+.gitkeep: Sorted/Misc/GIT
+.gitignore: Sorted/Misc/GIT
+.git: Sorted/Misc/GIT
+#################################
+# Special rules [TO DO]
+special_rules:
+  - ['.jpg', 'special_directory', './special_files']
+  - ['.py', 'special_directory', './special_files']
